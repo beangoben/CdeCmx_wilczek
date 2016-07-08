@@ -32,8 +32,8 @@ with open(join(here, 'userlist')) as f:
             admin.add(name)
 # empty whitelist so we can make user dynamically
 c.Authenticator.whitelist = whitelist = set()
-
 c.GitHubOAuthenticator.oauth_callback_url = os.environ['OAUTH_CALLBACK_URL']
+
 
 # ssl config
 ssl = join(here, 'ssl')
